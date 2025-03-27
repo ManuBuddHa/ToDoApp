@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ToDo App</title>
+</head>
+<body>
+   <div id="container">
+      <h1>To-Do App</h1>
+      <div id="left">
+         <div class="head">
+            <h2>Projects</h2><button id="add"><b>+</b></button>
+         </div>
+         <dialog id="project-dialog">
+            <form>
+               <label for="project-name">Project Name : </label><input type="text" name="project-name" id="project-name">
+               <input type="button" id="project-submit" name="project-submit" value="Submit">
+               <input type="reset" id="close" value="Close">
+            </form>
+         </dialog>
+      </div>
+      <div id="right">
+         <div class="head">
+            <h2>Tasks</h2><button><b>+</b></button>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
