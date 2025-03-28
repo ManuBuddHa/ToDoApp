@@ -22,8 +22,22 @@
       </div>
       <div id="right">
          <div class="head">
-            <h2>Tasks</h2><button><b>+</b></button>
+            <h2>Tasks</h2><button id="task-add"><b>+</b></button>
          </div>
+         <dialog id="task-dialog">
+            <form>
+               <label for="task-name">Task Name : </label><input type="text" name="task-name" id="task-name"><br>
+               <label for="task-info" class="downlabel">Info :</label><textarea name="task-info" id="task-info"></textarea><br>
+               <label for="task-date">Date : </label><input type="date" id="task-date" min=""><br>
+               <label for="task-priority">Priority : </label>
+                  <input type="radio" name="priority" value="high"><label for="high">High</label>
+                  <input type="radio" name="priority" value="medium"><label for="medium">Medium</label>
+                  <input type="radio" name="priority" value="low"><label for="low">Low</label>
+                  <br>
+               <input type="button" id="project-submit" name="project-submit" value="Submit">
+               <input type="reset" id="task-close" value="Close">
+            </form>
+         </dialog>
       </div>
    </div>
 </body>
